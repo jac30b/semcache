@@ -1,0 +1,5 @@
+package embeding
+
+const (
+	defaultEmbedingModel = ""
+)

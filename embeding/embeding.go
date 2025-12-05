@@ -1,5 +1,11 @@
 package embeding
 
+type EmbederType string
+
 const (
-	defaultEmbedingModel = ""
+	HttpEmbeder EmbederType = "http"
 )
+
+type Embeder interface {
+	Embed(string) ([]float32, error)
+}

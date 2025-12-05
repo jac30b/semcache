@@ -1,0 +1,2 @@
+embeder: "http"
+embederPath: "http://localhost:8080/embed"

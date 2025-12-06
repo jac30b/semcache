@@ -32,17 +32,22 @@ func NewOllamaEmbeder(logger *zap.Logger) (*ollamaEmbeder, error) {
 }
 
 func (e *ollamaEmbeder) Embed(query string) ([]float32, error) {
-	now := time.Now()
+	var (
+		dimensions int
+
+		now = time.Now()
+	)
 
 	defer func() {
 		e.logger.Debug("sending embeding request",
 			zap.String("embeder", "ollama"),
 			zap.String("query", query),
-			zap.Duration("elapsed", time.Since(now)))
+			zap.Duration("elapsed", time.Since(now)),
+			zap.Int("dimensions", dimensions))
 	}()
 
 	res, err := e.client.Embed(context.TODO(), &ollama.EmbedRequest{
-		Model: "embeddinggemma",
+		Model: "all-minilm",
 		Input: []string{query},
 		// todo: dimensions
 	})
@@ -54,6 +59,8 @@ func (e *ollamaEmbeder) Embed(query string) ([]float32, error) {
 	if len(res.Embeddings) == 0 {
 		return nil, ErrEmptyEmbedings
 	}
+
+	dimensions = len(res.Embeddings[0])
 
 	return res.Embeddings[0], nil
 }

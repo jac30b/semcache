@@ -35,8 +35,9 @@ func (c *ollamaClient) Ask(question string) (string, error) {
 
 	// todo: we can store whole context?
 	err := c.client.Generate(context.TODO(), &ollama.GenerateRequest{
-		Model:  "qwen3",
+		Model:  "phi3:mini",
 		Prompt: question,
+		Think:  &ollama.ThinkValue{Value: false},
 	}, func(res ollama.GenerateResponse) error {
 		response += res.Response
 		return nil

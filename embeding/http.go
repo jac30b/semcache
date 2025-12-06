@@ -35,6 +35,7 @@ func (he *httpEmbeder) Embed(query string) ([]float32, error) {
 	now := time.Now()
 	defer func() {
 		he.logger.Debug("sending embeding request",
+			zap.String("embeder", "http"),
 			zap.String("query", query),
 			zap.Duration("elapsed", time.Since(now)))
 	}()
@@ -65,7 +66,7 @@ func (he *httpEmbeder) Embed(query string) ([]float32, error) {
 	}
 
 	if len(vec) == 0 {
-		return nil, errors.New("empty embed response")
+		return nil, ErrEmptyEmbedings
 	}
 
 	return vec[0], nil

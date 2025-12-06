@@ -5,6 +5,7 @@ import (
 
 	"github.com/goccy/go-yaml"
 	"github.com/jakub-galecki/semcache/embeding"
+	"github.com/jakub-galecki/semcache/llm"
 	"github.com/joho/godotenv"
 	"go.uber.org/zap"
 )
@@ -13,7 +14,8 @@ var logger *zap.Logger
 
 type config struct {
 	Embeder     embeding.EmbederType
-	EmbederPath string `yaml:"embederPath"`
+	EmbederPath string      `yaml:"embederPath"`
+	Llm         llm.LLMType `yaml:"llm"`
 }
 
 func init() {

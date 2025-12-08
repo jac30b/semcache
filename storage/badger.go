@@ -3,6 +3,7 @@ package storage
 import (
 	"encoding/json"
 	"sort"
+	"time"
 
 	badger "github.com/dgraph-io/badger/v4"
 	"go.uber.org/zap"
@@ -30,6 +31,13 @@ func NewBadgerStorage(logger *zap.Logger, path string) (*badgerStorage, error) {
 }
 
 func (bs *badgerStorage) Set(e Entry) error {
+	start := time.Now()
+	defer func() {
+		bs.logger.Debug("storage.Set",
+			zap.String("storage", "badger"),
+			zap.Duration("elapsed", time.Since(start)))
+	}()
+
 	return bs.db.Update(func(txn *badger.Txn) error {
 		raw, err := e.Bytes()
 		if err != nil {
@@ -41,7 +49,16 @@ func (bs *badgerStorage) Set(e Entry) error {
 }
 
 func (bs *badgerStorage) Get(id []byte) (Entry, error) {
-	var ent Entry
+	var (
+		ent Entry
+
+		start = time.Now()
+	)
+	defer func() {
+		bs.logger.Debug("storage.Get",
+			zap.String("storage", "badger"),
+			zap.Duration("elapsed", time.Since(start)))
+	}()
 	err := bs.db.View(func(txn *badger.Txn) error {
 		item, err := txn.Get(id)
 		if err != nil {
@@ -61,8 +78,14 @@ func (bs *badgerStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 	var (
 		e       Entry
 		similar []Entry
-	)
 
+		start = time.Now()
+	)
+	defer func() {
+		bs.logger.Debug("storage.FindNearest",
+			zap.String("storage", "badger"),
+			zap.Duration("elapsed", time.Since(start)))
+	}()
 	err := bs.db.View(func(txn *badger.Txn) error {
 		opts := badger.DefaultIteratorOptions
 		opts.PrefetchSize = 10

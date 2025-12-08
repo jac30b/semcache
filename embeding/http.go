@@ -32,12 +32,11 @@ func NewHttpEmbeder(logger *zap.Logger, path string) (*httpEmbeder, error) {
 }
 
 func (he *httpEmbeder) Embed(query string) ([]float32, error) {
-	now := time.Now()
+	start := time.Now()
 	defer func() {
-		he.logger.Debug("sending embeding request",
+		he.logger.Debug("embeder.Embed",
 			zap.String("embeder", "http"),
-			zap.String("query", query),
-			zap.Duration("elapsed", time.Since(now)))
+			zap.Duration("elapsed", time.Since(start)))
 	}()
 
 	req := map[string][]string{

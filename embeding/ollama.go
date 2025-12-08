@@ -35,15 +35,14 @@ func (e *ollamaEmbeder) Embed(query string) ([]float32, error) {
 	var (
 		dimensions int
 
-		now = time.Now()
+		start = time.Now()
 	)
 
 	defer func() {
-		e.logger.Debug("sending embeding request",
+		e.logger.Debug("embeder.Embed",
 			zap.String("embeder", "ollama"),
-			zap.String("query", query),
-			zap.Duration("elapsed", time.Since(now)),
-			zap.Int("dimensions", dimensions))
+			zap.Int("dimensions", dimensions),
+			zap.Duration("elapsed", time.Since(start)))
 	}()
 
 	res, err := e.client.Embed(context.TODO(), &ollama.EmbedRequest{

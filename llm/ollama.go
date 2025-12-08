@@ -2,6 +2,7 @@ package llm
 
 import (
 	"context"
+	"time"
 
 	ollama "github.com/ollama/ollama/api"
 	"go.uber.org/zap"
@@ -29,6 +30,13 @@ func NewOllamaClient(logger *zap.Logger) (*ollamaClient, error) {
 
 func (c *ollamaClient) Ask(question string) (string, error) {
 	var response string
+
+	start := time.Now()
+	defer func() {
+		c.logger.Debug("llm.Ask",
+			zap.String("llm", "ollama"),
+			zap.Duration("elapsed", time.Since(start)))
+	}()
 
 	c.logger.Debug("generating response to query",
 		zap.String("query", question))

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"os"
 
 	"github.com/goccy/go-yaml"
@@ -25,7 +26,9 @@ func init() {
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		panic(err)
+		if !errors.Is(err, os.ErrNotExist) {
+			panic(err)
+		}
 	}
 
 	defer logger.Sync()

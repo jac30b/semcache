@@ -25,7 +25,7 @@ func newSemcache(config *config) *semcache {
 		panic(err)
 	}
 
-	storage, err := storage.NewBadgerStorage(logger.Named("badger"), "./data")
+	storage, err := storage.NewChromaStorage(logger.Named("chroma"), "http://localhost:8900")
 	if err != nil {
 		panic(err)
 	}

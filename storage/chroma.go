@@ -3,6 +3,7 @@ package storage
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"time"
 
 	chroma "github.com/amikos-tech/chroma-go/pkg/api/v2"
@@ -20,7 +21,7 @@ type chromaStorage struct {
 
 func NewChromaStorage(logger *zap.Logger, path string) (*chromaStorage, error) {
 	client, err := chroma.NewHTTPClient(
-		chroma.WithBaseURL("http://localhost:8900"),
+		chroma.WithBaseURL(path),
 	)
 	if err != nil {
 		return nil, err
@@ -47,17 +48,15 @@ func (cs *chromaStorage) Set(e Entry) error {
 		return err
 	}
 
-	meta, err := chroma.NewDocumentMetadataFromMap(map[string]interface{}{
-		"data": string(raw),
-	})
-	if err != nil {
-		return err
-	}
+	meta := chroma.NewDocumentMetadata(
+		chroma.NewStringAttribute("data", string(raw)),
+	)
 
-	emb := &embeddings.Float32Embedding{ArrayOfFloat32: &e.Embeding}
+	emb := embeddings.NewEmbeddingFromFloat32(e.Embeding)
 
 	return cs.collection.Upsert(context.TODO(),
 		chroma.WithIDs(chroma.DocumentID(e.Id)),
+		chroma.WithTexts(e.Prompt),
 		chroma.WithEmbeddings(emb),
 		chroma.WithMetadatas(meta),
 	)
@@ -85,12 +84,10 @@ func (cs *chromaStorage) Get(id []byte) (Entry, error) {
 
 	metas := res.GetMetadatas()
 	if len(metas) > 0 {
-		if data, ok := metas[0].GetRaw("data"); ok {
-			if s, ok := data.(string); ok {
-				err = json.Unmarshal([]byte(s), &ent)
-				if err != nil {
-					return ent, err
-				}
+		if s, ok := metas[0].GetString("data"); ok {
+			err = json.Unmarshal([]byte(s), &ent)
+			if err != nil {
+				return ent, err
 			}
 		}
 	}
@@ -106,14 +103,16 @@ func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 	defer func() {
 		cs.logger.Debug("storage.FindNearest",
 			zap.String("storage", "chroma"),
+			zap.Int("found", len(entries)),
 			zap.Duration("elapsed", time.Since(start)))
 	}()
 
-	emb := &embeddings.Float32Embedding{ArrayOfFloat32: &vector}
+	emb := embeddings.NewEmbeddingFromFloat32(vector)
 
 	res, err := cs.collection.Query(context.TODO(),
 		chroma.WithQueryEmbeddings(emb),
 		chroma.WithNResults(k),
+		chroma.WithInclude(chroma.IncludeMetadatas, chroma.IncludeDistances),
 	)
 	if err != nil {
 		return nil, err
@@ -127,18 +126,16 @@ func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 	dists := res.GetDistancesGroups()[0]
 
 	for i := range metas {
-		if data, ok := metas[i].GetRaw("data"); ok {
-			if s, ok := data.(string); ok {
-				var ent Entry
-				err = json.Unmarshal([]byte(s), &ent)
-				if err != nil {
-					return nil, err
-				}
-				if i < len(dists) {
-					ent.similarity = float32(1.0 - dists[i])
-				}
-				entries = append(entries, ent)
+		if s, ok := metas[i].GetString("data"); ok {
+			var ent Entry
+			err = json.Unmarshal([]byte(s), &ent)
+			if err != nil {
+				return nil, err
 			}
+			if i < len(dists) {
+				ent.similarity = float32(1.0 - dists[i])
+			}
+			entries = append(entries, ent)
 		}
 	}
 
@@ -146,5 +143,8 @@ func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 }
 
 func (cs *chromaStorage) Close() error {
-	return nil
+	var err error
+	err = errors.Join(err, cs.collection.Close())
+	err = errors.Join(err, cs.client.Close())
+	return err
 }

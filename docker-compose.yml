@@ -1,0 +1,23 @@
+services:
+  chromadb:
+    build: .
+    container_name: chromadb
+    ports:
+      - "8900:8000"
+    volumes:
+      - ./chroma-data:/data
+      - ./chroma-config.yaml:/config.yaml
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/data
+      - ANONYMIZED_TELEMETRY=FALSE
+    restart: unless-stopped
+
+  chromadb-ui:
+    build: ./chromadb-ui
+    container_name: chromadb-ui
+    ports:
+      - "3001:80"
+    depends_on:
+      - chromadb
+    restart: unless-stopped

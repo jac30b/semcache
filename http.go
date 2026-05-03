@@ -36,6 +36,7 @@ func newEchoServer(s *semcache) *server {
 		id := genId(query)
 		e, err := s.storage.Get(id)
 		if err == nil && e.Answer != "" {
+			c.Response().Header().Set("X-Cache", "HIT")
 			return c.String(http.StatusOK, e.Answer)
 		}
 
@@ -52,7 +53,18 @@ func newEchoServer(s *semcache) *server {
 		}
 
 		if len(entries) > 0 {
-			return c.String(http.StatusOK, entries[0].Answer)
+			entry := entries[0]
+			logger.Debug("nearest match found",
+				zap.String("prompt", entry.Prompt),
+				zap.Float32("similarity", entry.Similarity),
+				zap.Float32("threshold", s.threshold))
+
+			if entry.Similarity >= s.threshold {
+				c.Response().Header().Set("X-Cache", "HIT")
+				return c.String(http.StatusOK, entry.Answer)
+			}
+
+			logger.Debug("similarity below threshold, treating as MISS")
 		}
 
 		// ask llm
@@ -62,7 +74,7 @@ func newEchoServer(s *semcache) *server {
 		}
 
 		id = genId(query)
-		e = storage.Entry{
+		ent := storage.Entry{
 			Id:        id,
 			Prompt:    query,
 			Answer:    res,
@@ -70,12 +82,13 @@ func newEchoServer(s *semcache) *server {
 			CreatedAt: time.Now(),
 		}
 
-		err = s.storage.Set(e)
+		err = s.storage.Set(ent)
 		if err != nil {
 			return c.String(http.StatusInternalServerError, err.Error())
 		}
 
-		return c.JSON(http.StatusOK, e.Answer)
+		c.Response().Header().Set("X-Cache", "MISS")
+		return c.String(http.StatusOK, ent.Answer)
 	})
 
 	return &server{

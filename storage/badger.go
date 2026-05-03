@@ -107,7 +107,7 @@ func (bs *badgerStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 				// 	zap.String("answer", e.Answer),
 				// 	zap.Float32("similarity", sim))
 				if sim >= 0.9 {
-					e.similarity = sim
+					e.Similarity = sim
 					similar = append(similar, e)
 				}
 				return nil
@@ -124,7 +124,7 @@ func (bs *badgerStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 
 	// Sort by similarity descending
 	sort.Slice(similar, func(i, j int) bool {
-		return similar[i].similarity > similar[j].similarity
+		return similar[i].Similarity > similar[j].Similarity
 	})
 
 	// Trim to K results

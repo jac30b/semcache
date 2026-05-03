@@ -15,19 +15,27 @@ var (
 type ollamaEmbeder struct {
 	logger *zap.Logger
 	client *ollama.Client
+	model  string
 }
 
-func NewOllamaEmbeder(logger *zap.Logger) (*ollamaEmbeder, error) {
+func NewOllamaEmbeder(logger *zap.Logger, model string) (*ollamaEmbeder, error) {
 	ollamaClient, err := ollama.ClientFromEnvironment()
 	if err != nil {
 		return nil, err
 	}
+
+	if model == "" {
+		model = "nomic-embed-text"
+	}
+
 	c := &ollamaEmbeder{
 		logger: logger.Named("embeding"),
 		client: ollamaClient,
+		model:  model,
 	}
 	c.logger.Debug("created embeder",
-		zap.String("embeder", "ollama"))
+		zap.String("embeder", "ollama"),
+		zap.String("model", model))
 	return c, nil
 }
 
@@ -46,7 +54,7 @@ func (e *ollamaEmbeder) Embed(query string) ([]float32, error) {
 	}()
 
 	res, err := e.client.Embed(context.TODO(), &ollama.EmbedRequest{
-		Model: "all-minilm",
+		Model: e.model,
 		Input: []string{query},
 		// todo: dimensions
 	})

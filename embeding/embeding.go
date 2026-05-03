@@ -7,6 +7,8 @@ type EmbederType string
 const (
 	HttpEmbeder   EmbederType = "http"
 	OllamaEmbeder EmbederType = "ollama"
+	OpenAIEmbeder EmbederType = "openai"
+	VoyageEmbeder EmbederType = "voyage"
 )
 
 var (

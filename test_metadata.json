@@ -1,0 +1,2261 @@
+{
+  "summary": {
+    "total_queries": 450,
+    "unique_intents": 70,
+    "expected_hits": 380,
+    "expected_misses": 70,
+    "theoretical_hit_rate": 0.8444444444444444
+  },
+  "queries": [
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Can I pay using credit/debit cards here?\"",
+      "intent_id": "base_5",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Do you have a rewards structure that encourages continuous patronage?\"",
+      "intent_id": "base_12",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Now for the more challenging instruction and follow-ups based on the topic of 'Law--Business Law--Contract Rejection'.",
+      "intent_id": "base_10",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Could someone advise on the protocol for reinstating access when I cannot recall creating a specific username and its corresponding secret phrase needed for entry into my personal digital vaults (password)?",
+      "intent_id": "base_2",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"How do we manage a decision to nullify previously completed orders?\"",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the weather like?",
+      "intent_id": "long_tail_46",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Does your company provide global delivery options?\"",
+      "intent_id": "base_3",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Could someone advise on the protocol for reinstating access when I cannot recall creating a specific username and its corresponding secret phrase needed for entry into my personal digital vaults (password)?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What should I do if my item arrived damaged?",
+      "intent_id": "base_14",
+      "expected": "MISS"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is a semantic cache?",
+      "intent_id": "long_tail_47",
+      "expected": "MISS"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can I ship internationally with your service?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the standard processing time from dispatching an item domestically within our country?",
+      "intent_id": "base_11",
+      "expected": "MISS"
+    },
+    {
+      "query": "Do you offer gift wrapping services?",
+      "intent_id": "base_19",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"I need instructions for following up with a courier service regarding my shipment.\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "Could you guide me through the process of canceling my subscription/account?",
+      "intent_id": "base_8",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Could someone advise on the protocol for reinstating access when I cannot recall creating a specific username and its corresponding secret phrase needed for entry into my personal digital vaults (password)?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I bake a cake?",
+      "intent_id": "long_tail_23",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Could you tell me if [Service Name] offers a mobile platform option?\"",
+      "intent_id": "base_7",
+      "expected": "MISS"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Does your company provide global delivery options?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "How far is the moon?",
+      "intent_id": "long_tail_49",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"How do I keep tabs on where my parcel is at any given time?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the capital of France?",
+      "intent_id": "long_tail_20",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Can you tell me what time you open?\"",
+      "intent_id": "base_9",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Which forms of payment are accepted by your establishment?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can the current sized item be exchanged for one of differing dimensions?",
+      "intent_id": "base_15",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "Tell me a joke.",
+      "intent_id": "long_tail_32",
+      "expected": "MISS"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"How do I keep tabs on where my parcel is at any given time?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Are there any specific payment options available at this location?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the weather like?",
+      "intent_id": "long_tail_39",
+      "expected": "MISS"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the capital of France?",
+      "intent_id": "long_tail_18",
+      "expected": "MISS"
+    },
+    {
+      "query": "What are your opening hours?",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can I cancel my order after it has been placed?",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I sign up for the newsletter?",
+      "intent_id": "base_18",
+      "expected": "MISS"
+    },
+    {
+      "query": "4. Please instruct on how one might restore an account'sinaccess due to memory lapse regarding their login credentials, specifically focusing on reset mechanisms?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my shipping address?",
+      "intent_id": "base_6",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. Please instruct on how one might restore an account'sinaccess due to memory lapse regarding their login credentials, specifically focusing on reset mechanisms?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who is the president?",
+      "intent_id": "long_tail_34",
+      "expected": "MISS"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"Do customers from other countries receive packages when they use your services?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who wrote Romeo and Juliet?",
+      "intent_id": "long_tail_26",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is 2+2?",
+      "intent_id": "long_tail_12",
+      "expected": "MISS"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What are the methods available for reaching out to customer service?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "Tell me a joke.",
+      "intent_id": "long_tail_27",
+      "expected": "MISS"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How much longer do I have before my package arrives if it's currently in transit and taking about three days to deliver nationwide?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the capital of France?",
+      "intent_id": "long_tail_48",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"What are the steps to view updates about my dispatched item online?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What are the methods available for reaching out to customer service?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who is the president?",
+      "intent_id": "long_tail_1",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is 2+2?",
+      "intent_id": "long_tail_31",
+      "expected": "MISS"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Which forms of payment are accepted by your establishment?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "Is there a mobile app for this service?",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Can I revoke my order following confirmation, under any circumstances?\"",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Are they offering any sort of application for the convenience of accessing [Service Name] on the go?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) \"Does your establishment provide a gift wrap service for purchased items?\"",
+      "intent_id": "base_19",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"How do I keep tabs on where my parcel is at any given time?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I need instructions for following up with a courier service regarding my shipment.\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Could you tell me if [Service Name] offers a mobile platform option?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I sign up for the newsletter?",
+      "intent_id": "base_18",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"In what ways can customers reach the assistance desk or support personnel?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Could someone advise on the protocol for reinstating access when I cannot recall creating a specific username and its corresponding secret phrase needed for entry into my personal digital vaults (password)?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Could someone guide me toward the place I can see my recent billing statement or invoice, please?\"",
+      "intent_id": "base_16",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I apply a discount code?",
+      "intent_id": "base_13",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What's the method for monitoring my package status?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who is the president?",
+      "intent_id": "long_tail_38",
+      "expected": "MISS"
+    },
+    {
+      "query": "4. \"How do I keep tabs on where my parcel is at any given time?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can I cancel my order after it has been placed?",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I learn Go?",
+      "intent_id": "long_tail_9",
+      "expected": "MISS"
+    },
+    {
+      "query": "4. \"What types of currency can be used for transactions with you?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I apply a discount code?",
+      "intent_id": "base_13",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the weather like?",
+      "intent_id": "long_tail_8",
+      "expected": "MISS"
+    },
+    {
+      "query": "How far is the moon?",
+      "intent_id": "long_tail_2",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Do you have a rewards structure that encourages continuous patronage?\"",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is 2+2?",
+      "intent_id": "long_tail_42",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is a semantic cache?",
+      "intent_id": "long_tail_33",
+      "expected": "MISS"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"What types of currency can be used for transactions with you?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who wrote Romeo and Juliet?",
+      "intent_id": "long_tail_22",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I bake a cake?",
+      "intent_id": "long_tail_19",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Is there a mobile app for this service?",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the standard processing time from dispatching an item domestically within our country?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is 2+2?",
+      "intent_id": "long_tail_4",
+      "expected": "MISS"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you have a loyalty or rewards program?",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"In what ways can customers reach the assistance desk or support personnel?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Could someone advise on the protocol for reinstating access when I cannot recall creating a specific username and its corresponding secret phrase needed for entry into my personal digital vaults (password)?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Could you tell me if [Service Name] offers a mobile platform option?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Does the [Service Name] have a dedicated mobile application?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"Do you accept online banking transfers or mobile payments? If so, which ones?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What is the process for updating my delivery location?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Are they offering any sort of application for the convenience of accessing [Service Name] on the go?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "Are your products sustainably sourced?",
+      "intent_id": "base_17",
+      "expected": "MISS"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) \"Can I request gift wrappings at checkout with my purchase today?\"",
+      "intent_id": "base_19",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"What are the steps to view updates about my dispatched item online?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"How do I keep tabs on where my parcel is at any given time?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How soon after placing my order can I expect delivery if it'ts being sent internationally with regular postal services?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I wish to expressly seek redressal for potential discrepancies that might arise from circumstances suggesting undue influence during our contractual negotiations, which may necessitate invoking provisional measures under Section 148(2) BGB as a precautionary measure until we resolve this matter.\"",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Are there costs associated with sending parcels abroad through you?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you provide options on how to get in touch with our customer help team?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Does your company provide global delivery options?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who is the president?",
+      "intent_id": "long_tail_11",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who is the president?",
+      "intent_id": "long_tail_14",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I learn Go?",
+      "intent_id": "long_tail_43",
+      "expected": "MISS"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my shipping address?",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Is there a system of earning discounts with frequent shopping?\"",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"When do you start serving customers in the morning?\"",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "How far is the moon?",
+      "intent_id": "long_tail_45",
+      "expected": "MISS"
+    },
+    {
+      "query": "Who wrote Romeo and Juliet?",
+      "intent_id": "long_tail_44",
+      "expected": "MISS"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the capital of France?",
+      "intent_id": "long_tail_36",
+      "expected": "MISS"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you guide me on how to modify my ship-to destination details?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I learn Go?",
+      "intent_id": "long_tail_0",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I bake a cake?",
+      "intent_id": "long_tail_37",
+      "expected": "MISS"
+    },
+    {
+      "query": "Do you have a loyalty or rewards program?",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What steps should I take upon receiving an undamaged package that appears compromised in transit?",
+      "intent_id": "base_14",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I remove my account from here?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "How far is the moon?",
+      "intent_id": "long_tail_5",
+      "expected": "MISS"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the typical delivery time for shipments from this location?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Is there a mobile app for this service?",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is a semantic cache?",
+      "intent_id": "long_tail_30",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Can I pay using credit/debit cards here?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who wrote Romeo and Juliet?",
+      "intent_id": "long_tail_25",
+      "expected": "MISS"
+    },
+    {
+      "query": "What are your opening hours?",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "Could you guide me through the process of canceling my subscription/account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I bake a cake?",
+      "intent_id": "long_tail_40",
+      "expected": "MISS"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Tell me a joke.",
+      "intent_id": "long_tail_16",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is 2+2?",
+      "intent_id": "long_tail_10",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What is the process for updating my delivery location?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can I exchange an item for a different size?",
+      "intent_id": "base_15",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. Where exactly should I input a coupon code when processing payment?",
+      "intent_id": "base_13",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you guide me on how to modify my ship-to destination details?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I need instructions for following up with a courier service regarding my shipment.\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I apply a discount code?",
+      "intent_id": "base_13",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "3) In case of dissatisfaction with my purchase, how do you handle refund requests?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What steps are needed to regain access by setting a new password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I delete my account?",
+      "intent_id": "base_8",
+      "expected": "HIT"
+    },
+    {
+      "query": "How long does shipping usually take?",
+      "intent_id": "base_11",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"What are the steps to view updates about my dispatched item online?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I wish to expressly seek redressal for potential discrepancies that might arise from circumstances suggesting undue influence during our contractual negotiations, which may necessitate invoking provisional measures under Section 148(2) BGB as a precautionary measure until we resolve this matter.\"",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I learn Go?",
+      "intent_id": "long_tail_13",
+      "expected": "MISS"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I handle a situation where my package arrives with damage?",
+      "intent_id": "base_14",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you explain how I can check on my delivery progress?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"In what ways can customers reach the assistance desk or support personnel?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "What are your opening hours?",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Are there costs associated with sending parcels abroad through you?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the weather like?",
+      "intent_id": "long_tail_35",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I bake a cake?",
+      "intent_id": "long_tail_6",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you guide me on how to modify my ship-to destination details?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can I access [Service Name] through an Android or iPhone app?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Could someone explain how I might switch shipping addresses and update it accordingly?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What's the method for monitoring my package status?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can I cancel my order after it has been placed?",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my shipping address?",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can I join the customer benefits scheme at your establishment?\"",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What's the method for monitoring my package status?\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Is international shipping available?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "Tell me a joke.",
+      "intent_id": "long_tail_3",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Could someone explain how I might switch shipping addresses and update it accordingly?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "Are the origins of your goods traceable and ethically obtained without harming the planet?",
+      "intent_id": "base_17",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What steps are needed to regain access by setting a new password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "5. \"Do customers from other countries receive packages when they use your services?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Is international shipping available?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you offer international shipping?",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What steps are needed to regain access by setting a new password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can I pay using credit/debit cards here?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Tell me a joke.",
+      "intent_id": "long_tail_41",
+      "expected": "MISS"
+    },
+    {
+      "query": "1) What does your company's return process entail?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How far is the moon?",
+      "intent_id": "long_tail_28",
+      "expected": "MISS"
+    },
+    {
+      "query": "How can I reset my password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"What is the process for updating my delivery location?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I learn Go?",
+      "intent_id": "long_tail_21",
+      "expected": "MISS"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What are your opening hours?",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. Please instruct on how one might restore an account'sinaccess due to memory lapse regarding their login credentials, specifically focusing on reset mechanisms?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "2) How can I receive a reimbursement from you if necessary?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can you guide me through the process of updating my forgotten password?",
+      "intent_id": "base_2",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you guide me on how to modify my ship-to destination details?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Are there any specific payment options available at this location?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the capital of France?",
+      "intent_id": "long_tail_17",
+      "expected": "MISS"
+    },
+    {
+      "query": "\"Are they offering any sort of application for the convenience of accessing [Service Name] on the go?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Follow-up question 3: How does the legal system differentiate between pressure exerted through negotiation tactics versus undue influence?",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "Who wrote Romeo and Juliet?",
+      "intent_id": "long_tail_24",
+      "expected": "MISS"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Are they offering any sort of application for the convenience of accessing [Service Name] on the go?\"",
+      "intent_id": "base_7",
+      "expected": "HIT"
+    },
+    {
+      "query": "What payment methods do you accept?",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"In light of recent considerations regarding the fairness and voluntariness of our agreement execution process, I hereby invoke my rights under Article 49(3) of the Civil Code as grounds to request a thorough review of the obligations we have presently established.\"",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"In what ways can customers reach the assistance desk or support personnel?\"",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "Can I cancel my order after it has been placed?",
+      "intent_id": "base_10",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"Can you tell me what time you open?\"",
+      "intent_id": "base_9",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"Are there costs associated with sending parcels abroad through you?\"",
+      "intent_id": "base_3",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I contact customer support?",
+      "intent_id": "base_4",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "May we return this piece in a variant with altered proportions?",
+      "intent_id": "base_15",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you have a loyalty or rewards program?",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is the weather like?",
+      "intent_id": "long_tail_7",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "4. \"What types of currency can be used for transactions with you?\"",
+      "intent_id": "base_5",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I change my shipping address?",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is a semantic cache?",
+      "intent_id": "long_tail_29",
+      "expected": "MISS"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I need instructions on altering where I want packages sent; can you help with this please?\"",
+      "intent_id": "base_6",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is a semantic cache?",
+      "intent_id": "long_tail_15",
+      "expected": "MISS"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I sign up for the newsletter?",
+      "intent_id": "base_18",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "5) What are your procedures regarding money returned to customers due to any reason?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "\"I need instructions for following up with a courier service regarding my shipment.\"",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "How do I track my order?",
+      "intent_id": "base_1",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you have a loyalty or rewards program?",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "Do you have a loyalty or rewards program?",
+      "intent_id": "base_12",
+      "expected": "HIT"
+    },
+    {
+      "query": "4) Can you outline the steps for returning an item and getting it back on sale price?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    },
+    {
+      "query": "What is your refund policy?",
+      "intent_id": "base_0",
+      "expected": "HIT"
+    }
+  ]
+}

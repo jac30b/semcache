@@ -21,7 +21,7 @@ type Entry struct {
 	Embeding  []float32
 	CreatedAt time.Time
 
-	similarity float32
+	Similarity float32
 }
 
 func (e *Entry) Bytes() ([]byte, error) {

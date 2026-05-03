@@ -9,9 +9,10 @@ import (
 )
 
 type semcache struct {
-	embeder embeding.Embeder
-	storage storage.Storage
-	llm     llm.LLM
+	embeder   embeding.Embeder
+	storage   storage.Storage
+	llm       llm.LLM
+	threshold float32
 }
 
 func newSemcache(config *config) *semcache {
@@ -31,9 +32,10 @@ func newSemcache(config *config) *semcache {
 	}
 
 	return &semcache{
-		embeder: em,
-		llm:     llm,
-		storage: storage,
+		embeder:   em,
+		llm:       llm,
+		storage:   storage,
+		threshold: config.SimilarityThreshold,
 	}
 }
 
@@ -42,7 +44,11 @@ func newEmbeder(config *config) (embeding.Embeder, error) {
 	case embeding.HttpEmbeder:
 		return embeding.NewHttpEmbeder(logger, config.EmbederPath)
 	case embeding.OllamaEmbeder:
-		return embeding.NewOllamaEmbeder(logger)
+		return embeding.NewOllamaEmbeder(logger, config.EmbederModel)
+	case embeding.OpenAIEmbeder:
+		return embeding.NewOpenAIEmbeder(logger, config.EmbederModel)
+	case embeding.VoyageEmbeder:
+		return embeding.NewVoyageEmbeder(logger, config.EmbederModel)
 	default:
 		return nil, errors.New("embeder not exist")
 	}
@@ -51,7 +57,11 @@ func newEmbeder(config *config) (embeding.Embeder, error) {
 func newLLM(config *config) (llm.LLM, error) {
 	switch config.Llm {
 	case llm.Ollama:
-		return llm.NewOllamaClient(logger)
+		return llm.NewOllamaClient(logger, config.LlmModel)
+	case llm.OpenAI:
+		return llm.NewOpenAIClient(logger, config.LlmModel)
+	case llm.Groq:
+		return llm.NewGroqClient(logger, config.LlmModel)
 	default:
 		return nil, errors.New("llm not exist")
 	}

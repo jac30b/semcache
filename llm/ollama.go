@@ -11,19 +11,27 @@ import (
 type ollamaClient struct {
 	logger *zap.Logger
 	client *ollama.Client
+	model  string
 }
 
-func NewOllamaClient(logger *zap.Logger) (*ollamaClient, error) {
+func NewOllamaClient(logger *zap.Logger, model string) (*ollamaClient, error) {
 	oc, err := ollama.ClientFromEnvironment()
 	if err != nil {
 		return nil, err
 	}
+
+	if model == "" {
+		model = "phi3:mini"
+	}
+
 	c := &ollamaClient{
-		logger: logger.Named("embeding"),
+		logger: logger.Named("llm"),
 		client: oc,
+		model:  model,
 	}
 	c.logger.Debug("created llm",
-		zap.String("llm", "ollama"))
+		zap.String("llm", "ollama"),
+		zap.String("model", model))
 
 	return c, nil
 }
@@ -43,7 +51,7 @@ func (c *ollamaClient) Ask(question string) (string, error) {
 
 	// todo: we can store whole context?
 	err := c.client.Generate(context.TODO(), &ollama.GenerateRequest{
-		Model:  "phi3:mini",
+		Model:  c.model,
 		Prompt: question,
 		Think:  &ollama.ThinkValue{Value: false},
 	}, func(res ollama.GenerateResponse) error {

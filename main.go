@@ -14,9 +14,12 @@ import (
 var logger *zap.Logger
 
 type config struct {
-	Embeder     embeding.EmbederType
-	EmbederPath string      `yaml:"embederPath"`
-	Llm         llm.LLMType `yaml:"llm"`
+	Embeder             embeding.EmbederType
+	EmbederPath         string               `yaml:"embederPath"`
+	Llm                 llm.LLMType          `yaml:"llm"`
+	SimilarityThreshold float32              `yaml:"similarityThreshold"`
+	LlmModel            string               `yaml:"llmModel"`
+	EmbederModel        string               `yaml:"embederModel"`
 }
 
 func init() {

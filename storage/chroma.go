@@ -98,18 +98,22 @@ func (cs *chromaStorage) Get(id []byte) (Entry, error) {
 func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 	var (
 		entries []Entry
-		start   = time.Now()
+		res     chroma.QueryResult
+		err     error
+
+		start = time.Now()
+		emb   = embeddings.NewEmbeddingFromFloat32(vector)
 	)
+
 	defer func() {
 		cs.logger.Debug("storage.FindNearest",
 			zap.String("storage", "chroma"),
 			zap.Int("found", len(entries)),
-			zap.Duration("elapsed", time.Since(start)))
+			zap.Int("count_groups", res.CountGroups()),
+			zap.Duration("elapsed", time.Since(start)),
+			zap.Error(err))
 	}()
-
-	emb := embeddings.NewEmbeddingFromFloat32(vector)
-
-	res, err := cs.collection.Query(context.TODO(),
+	res, err = cs.collection.Query(context.TODO(),
 		chroma.WithQueryEmbeddings(emb),
 		chroma.WithNResults(k),
 		chroma.WithInclude(chroma.IncludeMetadatas, chroma.IncludeDistances),
@@ -124,7 +128,6 @@ func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 
 	metas := res.GetMetadatasGroups()[0]
 	dists := res.GetDistancesGroups()[0]
-
 	for i := range metas {
 		if s, ok := metas[i].GetString("data"); ok {
 			var ent Entry
@@ -133,12 +136,11 @@ func (cs *chromaStorage) FindNearest(vector []float32, k int) ([]Entry, error) {
 				return nil, err
 			}
 			if i < len(dists) {
-				ent.similarity = float32(1.0 - dists[i])
+				ent.Similarity = float32(1.0 - dists[i])
 			}
 			entries = append(entries, ent)
 		}
 	}
-
 	return entries, nil
 }
 

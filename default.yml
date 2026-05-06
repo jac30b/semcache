@@ -1,7 +1,7 @@
 embeder: "ollama" # ollama, http, openai, voyage
 embederPath: "http://localhost:8080/embed"
 similarityThreshold: 0.7
-embederModel: "nomic-embed-text" # mxbai-embed-large 
+embederModel: mxbai-embed-large # "nomic-embed-text" 
 llm: "ollama" # ollama, openai, groq
 llmModel: "qwen2:0.5b"
 

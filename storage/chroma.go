@@ -27,7 +27,9 @@ func NewChromaStorage(logger *zap.Logger, path string) (*chromaStorage, error) {
 		return nil, err
 	}
 
-	col, err := client.GetOrCreateCollection(context.TODO(), "semcache")
+	col, err := client.GetOrCreateCollection(context.TODO(), "semcache",
+		chroma.WithEmbeddingFunctionCreate(embeddings.NewConsistentHashEmbeddingFunction()),
+	)
 	if err != nil {
 		return nil, err
 	}
